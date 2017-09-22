@@ -40,7 +40,7 @@ public class Added_Fragment extends Fragment {
         }
     }
 
-    private void setText(String s) {
+    public void setText(String s) {
         tv = (TextView) getActivity().findViewById(R.id.TextView2);
         tv.setText(s);
     }

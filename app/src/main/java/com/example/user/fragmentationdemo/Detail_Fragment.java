@@ -65,12 +65,11 @@ public class Detail_Fragment extends Fragment{
         Log.i(TAG, getActivity().getComponentName().getClassName()+" has started");
         setImage(MainActivity.planetImage[MainActivity.planetIndex]);
         setText(MainActivity.planetLabel[MainActivity.planetIndex]);
-
     }
 
     // Load an image from file assetFile in the assets directory and display it.  The
     // contents of the assets directory are exported when the app is installed.
-    private void setImage(String assetFile) {
+    public void setImage(String assetFile) {
         try {
             // Get handle to the viewer
             imageView = (ImageView) getView().findViewById(R.id.image);
@@ -86,7 +85,7 @@ public class Detail_Fragment extends Fragment{
     }
 
     // Set the planet label
-    private void setText(String s) {
+    public void setText(String s) {
         TextView textView = (TextView) getView().findViewById(R.id.planetLabel);
         textView.setText(s);
     }

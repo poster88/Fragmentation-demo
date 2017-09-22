@@ -29,6 +29,6 @@
     <FrameLayout
         android:id="@+id/newFragment"
         android:layout_width="0dp"
-        android:layout_height="fill_parent"
+        android:layout_height="match_parent"
         android:layout_weight="0.7" />
 </LinearLayout>
